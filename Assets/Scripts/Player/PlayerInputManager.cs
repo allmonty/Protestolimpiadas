@@ -15,6 +15,8 @@ public class PlayerInputManager : MonoBehaviour {
 
     void readMovementInput()
     {
-        playerMove.move(Input.GetAxisRaw(moveHorizontalAxis), Input.GetAxisRaw(moveVerticalAxis));
+        Vector2 input = new Vector2(Input.GetAxisRaw(moveHorizontalAxis), Input.GetAxisRaw(moveVerticalAxis));
+        playerMove.move(input.x, input.y);
+        playerMove.look(input.x, input.y);
     }
 }
