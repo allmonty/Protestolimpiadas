@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: aeca66ef0a55e0e43a70805c915363c7
+timeCreated: 1471408176
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arm_L
+    100002: Arm_R
+    100004: Armature_000
+    100006: Boina
+    100008: Cassetete
+    100010: Chest
+    100012: Cube_006
+    100014: Finger_1_L
+    100016: Finger_1_R
+    100018: Finger_2_L
+    100020: Finger_2_R
+    100022: Finger_3_L
+    100024: Finger_3_R
+    100026: Finger_4_L
+    100028: Finger_4_R
+    100030: Foot_L
+    100032: Foot_R
+    100034: //RootNode
+    100036: Head
+    100038: Hips_L
+    100040: Hips_R
+    100042: IK_Foot_L
+    100044: IK_Foot_R
+    100046: IK_Hand_L
+    100048: IK_Hand_R
+    100050: Leg_L
+    100052: Leg_R
+    100054: Neck
+    100056: Shoulder_L
+    100058: Shoulder_R
+    100060: Thumb_1_L
+    100062: Thumb_1_R
+    100064: Thumb_2_L
+    100066: Thumb_2_R
+    100068: Torso
+    100070: Upper_Arm_L
+    100072: Upper_Arm_R
+    100074: Upper_Leg_L
+    100076: Upper_Leg_R
+    100078: Guarda
+    100080: Rig
+    400000: Arm_L
+    400002: Arm_R
+    400004: Armature_000
+    400006: Boina
+    400008: Cassetete
+    400010: Chest
+    400012: Cube_006
+    400014: Finger_1_L
+    400016: Finger_1_R
+    400018: Finger_2_L
+    400020: Finger_2_R
+    400022: Finger_3_L
+    400024: Finger_3_R
+    400026: Finger_4_L
+    400028: Finger_4_R
+    400030: Foot_L
+    400032: Foot_R
+    400034: //RootNode
+    400036: Head
+    400038: Hips_L
+    400040: Hips_R
+    400042: IK_Foot_L
+    400044: IK_Foot_R
+    400046: IK_Hand_L
+    400048: IK_Hand_R
+    400050: Leg_L
+    400052: Leg_R
+    400054: Neck
+    400056: Shoulder_L
+    400058: Shoulder_R
+    400060: Thumb_1_L
+    400062: Thumb_1_R
+    400064: Thumb_2_L
+    400066: Thumb_2_R
+    400068: Torso
+    400070: Upper_Arm_L
+    400072: Upper_Arm_R
+    400074: Upper_Leg_L
+    400076: Upper_Leg_R
+    400078: Guarda
+    400080: Rig
+    4300000: Cassetete
+    4300002: Cube_006
+    4300004: Boina
+    4300006: Guarda
+    7400000: Default Take
+    7400002: Attack
+    7400004: Idle_001
+    7400006: Idle_002
+    7400008: IdleTrue
+    7400010: IdleTrue_001
+    7400012: Jumping
+    7400014: JumpStatic
+    7400016: Run
+    7400018: Run_001
+    7400020: RunBad
+    7400022: Walk
+    7400024: Idle
+    7400026: Walk_001
+    9500000: //RootNode
+    13700000: Boina
+    13700002: Cassetete
+    13700004: Cube_006
+    13700006: Guarda
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
