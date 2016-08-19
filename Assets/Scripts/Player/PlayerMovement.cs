@@ -3,8 +3,10 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour {
 
-    public float speed = 6f;
     public Transform stairLooker;
+
+    public float speed = 6f;
+    public float stairJumpSpeed = 6f;
 
 	Rigidbody playerRigidbody;
 
@@ -16,9 +18,9 @@ public class PlayerMovement : MonoBehaviour {
 	public void move(float h, float v)
 	{
         float stairSpeedY = 0f;
-        if(isWalkingInStairs())
+        if(isWalkingInStairs() && (h != 0f || v != 0f))
         {
-            stairSpeedY = Mathf.Abs(v);
+            stairSpeedY = stairJumpSpeed;
         }
 
         Vector3 movementDir = new Vector3(h, stairSpeedY, v);
