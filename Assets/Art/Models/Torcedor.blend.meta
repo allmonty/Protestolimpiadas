@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: abbc109b063fc8f4883b5ce6f786efc7
-timeCreated: 1471408171
+guid: 8ea39edb4575ed34eb6a94fa6d736935
+timeCreated: 1471641764
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: Arm_L
     100002: Arm_R
-    100004: Armature_000
-    100006: Chest
-    100008: Cube_006
+    100004: Cartaz
+    100006: Cartaz_001
+    100008: Chest
     100010: Finger_2_L
     100012: Finger_2_R
     100014: Finger_3_L
@@ -30,29 +30,27 @@ ModelImporter:
     100044: Leg_L
     100046: Leg_R
     100048: Neck
-    100050: //RootNode
-    100052: Shoulder_L
-    100054: Shoulder_R
-    100056: Thumb_1_L
-    100058: Thumb_1_R
-    100060: Thumb_2_L
-    100062: Thumb_2_R
-    100064: Torso
-    100066: Upper_Arm_L
-    100068: Upper_Arm_R
-    100070: Upper_Leg_L
-    100072: Upper_Leg_R
-    100074: Bone
-    100076: Cartaz
-    100078: Player
-    100080: Rig
-    100082: Cartaz_001
-    100084: Player_001
+    100050: Player
+    100052: Player_001
+    100054: Rig
+    100056: Shoulder_L
+    100058: Shoulder_R
+    100060: Thumb_1_L
+    100062: Thumb_1_R
+    100064: Thumb_2_L
+    100066: Thumb_2_R
+    100068: //RootNode
+    100070: Torso
+    100072: Upper_Arm_L
+    100074: Upper_Arm_R
+    100076: Upper_Leg_L
+    100078: Upper_Leg_R
+    100080: Torcedor
     400000: Arm_L
     400002: Arm_R
-    400004: Armature_000
-    400006: Chest
-    400008: Cube_006
+    400004: Cartaz
+    400006: Cartaz_001
+    400008: Chest
     400010: Finger_2_L
     400012: Finger_2_R
     400014: Finger_3_L
@@ -73,53 +71,44 @@ ModelImporter:
     400044: Leg_L
     400046: Leg_R
     400048: Neck
-    400050: //RootNode
-    400052: Shoulder_L
-    400054: Shoulder_R
-    400056: Thumb_1_L
-    400058: Thumb_1_R
-    400060: Thumb_2_L
-    400062: Thumb_2_R
-    400064: Torso
-    400066: Upper_Arm_L
-    400068: Upper_Arm_R
-    400070: Upper_Leg_L
-    400072: Upper_Leg_R
-    400074: Bone
-    400076: Cartaz
-    400078: Player
-    400080: Rig
-    400082: Cartaz_001
-    400084: Player_001
-    4300000: Cube_006
-    4300002: Cartaz
+    400050: Player
+    400052: Player_001
+    400054: Rig
+    400056: Shoulder_L
+    400058: Shoulder_R
+    400060: Thumb_1_L
+    400062: Thumb_1_R
+    400064: Thumb_2_L
+    400066: Thumb_2_R
+    400068: //RootNode
+    400070: Torso
+    400072: Upper_Arm_L
+    400074: Upper_Arm_R
+    400076: Upper_Leg_L
+    400078: Upper_Leg_R
+    400080: Torcedor
+    4300000: Player_001
+    4300002: Cartaz_001
     4300004: Player
-    4300006: Cartaz_001
-    4300008: Player_001
+    4300006: Torcedor
     7400000: Default Take
-    7400002: ForaTemer
-    7400004: ForaTemer3
+    7400002: Cheering
+    7400004: ForaTemer
     7400006: ForaTemerActive
-    7400008: ForaTemerNada
-    7400010: Idle_001
-    7400012: Idle_002
-    7400014: IdleTrue
-    7400016: IdleTrue_001
-    7400018: Jumping
-    7400020: JumpStatic
-    7400022: Run
-    7400024: Run_001
-    7400026: RunBad
-    7400028: ThrowTest
-    7400030: Walk
-    7400032: Idle
-    7400034: Walk_001
+    7400008: Jumping
+    7400010: JumpStatic
+    7400012: Run
+    7400014: Sit
+    7400016: Sitting
+    7400018: Standing
+    7400020: ThrowTest
+    7400022: Walk
+    7400024: Idle
     9500000: //RootNode
-    13700000: Cube_006
-    13700002: Cartaz
-    13700004: Player
-    13700006: Cartaz_001
-    13700008: Player_001
+    13700000: Cartaz_001
+    13700002: Player
+    13700004: Player_001
+    13700006: Torcedor
   materials:
     importMaterials: 1
     materialName: 0
