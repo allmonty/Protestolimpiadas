@@ -5,11 +5,11 @@ public class TelevisionCamMovement : MonoBehaviour {
 
     public Transform[] wayPoints;
 
-    public int currentWayPoint;
-    public int nextWayPoint;
-
     public float waitingTime = 1f;
     public float speed = 1f;
+
+    int currentWayPoint;
+    int nextWayPoint;
 
     Rigidbody rigid;
     float timer = 0f;
