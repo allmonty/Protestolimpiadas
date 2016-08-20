@@ -16,6 +16,7 @@ public class PlayerHoldPoster : MonoBehaviour {
     {
         isHoldingPoster = true;
         anim.SetBool("IsHoldingPoster", isHoldingPoster);
+        transform.LookAt(transform.position + Vector3.back);
     }
 
     public void stopHolding()

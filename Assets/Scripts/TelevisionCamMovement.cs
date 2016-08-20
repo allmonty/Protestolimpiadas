@@ -11,7 +11,6 @@ public class TelevisionCamMovement : MonoBehaviour {
     int currentWayPoint;
     int nextWayPoint;
 
-    Rigidbody rigid;
     float timer = 0f;
     bool isWaiting = true;
 
@@ -19,8 +18,6 @@ public class TelevisionCamMovement : MonoBehaviour {
     {
         currentWayPoint = Random.Range(0, wayPoints.Length);
         transform.position = wayPoints[currentWayPoint].position;
-
-        rigid = GetComponent<Rigidbody>();
     }
 
     public void Update()

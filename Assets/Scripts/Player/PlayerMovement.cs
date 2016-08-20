@@ -58,6 +58,8 @@ public class PlayerMovement : MonoBehaviour {
 
     public void look(float x, float y)
     {
+        if (playerHoldPoster.isHoldingPoster) return;
+
         transform.LookAt(transform.position + new Vector3(x, 0f, y));
     }
 }
