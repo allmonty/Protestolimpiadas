@@ -6,18 +6,20 @@ public class GuardBehaviour : MonoBehaviour {
 	[SerializeField] float distanceToForget = 10;
 	[SerializeField] Transform target;
 
-	public bool chaseState;
-	public float timeToForget;
-	public float timer;
+	public bool isHoldingPoster = false;
+
+	public bool chaseState = false;
+	public float timeToForget = 2.0F;
+	public float timer = 0.0F;
 	bool targetSpotted = false;
 
 	void Start () {
-		chaseState = false;	
-		timeToForget = 2.0F;
-		timer = 0.0F;
+		
 	}
 
 	void Update () {
+
+		// Player out of sight
 		if (Vector3.Distance( this.transform.position, target.position) > distanceToForget )
 		{
 			if (targetSpotted)
@@ -33,8 +35,11 @@ public class GuardBehaviour : MonoBehaviour {
 		}
 		else
 		{
-			chaseState = true;
-			targetSpotted = true;
+			if (isHoldingPoster)
+			{
+				chaseState = true;
+				targetSpotted = true;				
+			}
 		}
 	}
 

@@ -19,7 +19,7 @@ public class GuardMovement : MonoBehaviour {
 		guardBehaviour = GetComponent<GuardBehaviour>();
 
 		nextWaypoint = Random.Range (0, routeWaypoints.Length);
-		transform.position = routeWaypoints[nextWaypoint].position;
+		agent.Warp(routeWaypoints[nextWaypoint].position);
 	}
 	
 	// Update is called once per frame
