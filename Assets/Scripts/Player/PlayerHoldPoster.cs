@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerHoldPoster : MonoBehaviour {
 
+    public bool isHoldingPoster = false;
+
     Animator anim;
 
     void Start()
@@ -12,11 +14,13 @@ public class PlayerHoldPoster : MonoBehaviour {
 
     public void startHolding()
     {
-        anim.SetBool("IsHoldingPoster", true);
+        isHoldingPoster = true;
+        anim.SetBool("IsHoldingPoster", isHoldingPoster);
     }
 
     public void stopHolding()
     {
-        anim.SetBool("IsHoldingPoster", false);
+        isHoldingPoster = false;
+        anim.SetBool("IsHoldingPoster", isHoldingPoster);
     }
 }

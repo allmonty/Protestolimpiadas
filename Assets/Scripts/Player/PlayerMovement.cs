@@ -8,15 +8,30 @@ public class PlayerMovement : MonoBehaviour {
     public float speed = 6f;
     public float stairJumpSpeed = 6f;
 
+    PlayerHoldPoster playerHoldPoster;
 	Rigidbody playerRigidbody;
+    Animator anim;
 
 	void Awake()
 	{
 		playerRigidbody = GetComponent<Rigidbody>();
+        playerHoldPoster = GetComponent<PlayerHoldPoster>();
+        anim = GetComponentInChildren<Animator>();
 	}
 
 	public void move(float h, float v)
 	{
+        if (playerHoldPoster.isHoldingPoster) return;
+
+        if(h != 0f || v != 0f)
+        {
+            anim.SetBool("Running", true);
+        }
+        else
+        {
+            anim.SetBool("Running", false);
+        }
+
         float stairSpeedY = 0f;
         if(isWalkingInStairs() && (h != 0f || v != 0f))
         {
