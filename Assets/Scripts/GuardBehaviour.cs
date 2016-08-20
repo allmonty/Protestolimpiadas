@@ -6,7 +6,7 @@ public class GuardBehaviour : MonoBehaviour {
 	[SerializeField] float distanceToForget = 10;
 	[SerializeField] Transform target;
 
-	public bool isHoldingPoster = false;
+	PlayerHoldPoster playerHoldPoster;
 
 	public bool chaseState = false;
 	public float timeToForget = 2.0F;
@@ -14,6 +14,7 @@ public class GuardBehaviour : MonoBehaviour {
 	bool targetSpotted = false;
 
 	void Start () {
+		playerHoldPoster = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHoldPoster>();
 		
 	}
 
@@ -35,7 +36,8 @@ public class GuardBehaviour : MonoBehaviour {
 		}
 		else
 		{
-			if (isHoldingPoster)
+			timer = 0.0F;
+			if (playerHoldPoster.isHoldingPoster)
 			{
 				chaseState = true;
 				targetSpotted = true;				

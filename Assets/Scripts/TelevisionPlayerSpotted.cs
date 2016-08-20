@@ -10,7 +10,7 @@ public class TelevisionPlayerSpotted : MonoBehaviour {
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        scoreManager = GameObject.Find("Score Manager").GetComponent<ScoreManager>();
+        scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
         tvCamera = gameObject.GetComponentInChildren<Camera>();
     }
 
