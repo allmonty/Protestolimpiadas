@@ -10,6 +10,7 @@ public class GuardBehaviour : MonoBehaviour {
 	[SerializeField] float distanceToAttack = 1.0F;
 	[SerializeField] float timeToForget = 2.0F;
 	[SerializeField] float searchingTime = 2.0F;
+	[SerializeField] float attackDelay = 1.5F;
 
 	[HideInInspector] public bool chaseState = false;
 	[HideInInspector] public bool searchState = false;
@@ -19,6 +20,7 @@ public class GuardBehaviour : MonoBehaviour {
 
 	bool targetSpotted = false;
 	float timer = 0.0F;
+	float attackTimer = 0.0F;
 
 	void Start () {
 		playerHoldPoster = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHoldPoster>();
@@ -55,7 +57,8 @@ public class GuardBehaviour : MonoBehaviour {
 			// Close distance
 			if (Vector3.Distance (this.transform.position, target.position) <= distanceToAttack)
 			{
-				anim.SetTrigger ("Attack");
+//				Debug.Log ("Attack!");
+//				anim.SetTrigger ("Attack");
 			}
 			else
 			{
@@ -70,6 +73,18 @@ public class GuardBehaviour : MonoBehaviour {
 				}				
 			}
 
+		}
+	}
+
+	void OnTriggerStay(Collider other) {
+		if ( other.CompareTag("Player") )
+		{
+			attackTimer += Time.deltaTime;
+			if (attackTimer >= attackDelay)
+			{
+				attackTimer = 0.0F;
+				anim.SetTrigger ("Attack");		
+			}
 		}
 	}
 
