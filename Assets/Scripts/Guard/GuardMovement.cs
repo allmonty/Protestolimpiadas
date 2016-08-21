@@ -4,12 +4,13 @@ using System.Collections;
 public class GuardMovement : MonoBehaviour {
 
 	public Transform target;
-	public float waitingTime;
+	[Tooltip("Time to wait between patrol route waypoints.")]
+	[SerializeField] float waitingTime;
 	[SerializeField] Transform[] routeWaypoints;
 
 	[Header("Speed Parameters")]
 	[SerializeField] float patrollingSpeed = 2.5F;
-	[SerializeField] float chaseSpeed = 4.0F;
+	[SerializeField] float chaseSpeed = 3.5F;
 
 	NavMeshAgent agent;
 	GuardBehaviour guardBehaviour;
