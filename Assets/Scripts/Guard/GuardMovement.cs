@@ -24,11 +24,17 @@ public class GuardMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (guardBehaviour.chaseState)
-		{
+		if (guardBehaviour.chaseState) {
+			agent.Resume();
 			agent.destination = target.position;	
-		} else
+		} 
+		else if (guardBehaviour.searchState)
 		{
+			agent.Stop();
+		}
+		else
+		{
+			agent.Resume();
 			agent.destination = routeWaypoints[nextWaypoint].position;
 			Vector3 normalizedWaypointPos = new Vector3 (agent.destination.x, transform.position.y, agent.destination.z);
 

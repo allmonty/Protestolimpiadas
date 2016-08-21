@@ -7,6 +7,6 @@ public class LookAtSomething : MonoBehaviour {
 
 	void Update()
     {
-        transform.LookAt(thing.position);
+		transform.LookAt(transform.position + Vector3.forward);
     }
 }
