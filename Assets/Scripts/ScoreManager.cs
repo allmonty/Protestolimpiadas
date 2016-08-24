@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour {
 
+    public Text scoreTxtGUI;
     public int score = 0;
     public float delayToWinPoint = 0.1f;
     public int pointPerDelay = 1;
@@ -32,6 +34,7 @@ public class ScoreManager : MonoBehaviour {
     void winPoint()
     {
         score += pointPerDelay;
+        scoreTxtGUI.text = "" + score;
         canWinPoint = true;
     }
 
