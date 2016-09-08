@@ -57,12 +57,12 @@ public class GuardBehaviour : MonoBehaviour {
 			// Close distance
 			if (Vector3.Distance (this.transform.position, target.position) <= distanceToAttack)
 			{
-//				Debug.Log ("Attack!");
-//				anim.SetTrigger ("Attack");
+                anim.SetBool ("isAttacking", true);
 			}
 			else
 			{
-				timer = 0.0F;
+                anim.SetBool("isAttacking", true);
+                timer = 0.0F;
 				if (playerHoldPoster.isHoldingPoster || searchState) {
 					chaseState = true;
 					searchState = false;
