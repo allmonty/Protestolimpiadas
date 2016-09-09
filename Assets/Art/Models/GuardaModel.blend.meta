@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: aeca66ef0a55e0e43a70805c915363c7
-timeCreated: 1473361532
+timeCreated: 1473362483
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -122,7 +122,7 @@ ModelImporter:
     motionNodeName: 
     animationImportErrors: '
 
-      Imported file ''GuardaModel'' conversion failed: Required human bone ''LeftFoot''
+      Imported file ''GuardaModel'' conversion failed: Required human bone ''LeftHand''
       not found
 
 
@@ -1019,6 +1019,22 @@ ModelImporter:
         modified: 0
     - boneName: Chest
       humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_R
+      humanName: RightFoot
       limit:
         min: {x: 0, y: 0, z: 0}
         max: {x: 0, y: 0, z: 0}
