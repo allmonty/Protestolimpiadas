@@ -61,7 +61,7 @@ public class GuardBehaviour : MonoBehaviour {
 			}
 			else
 			{
-                anim.SetBool("isAttacking", true);
+                anim.SetBool("isAttacking", false);
                 timer = 0.0F;
 				if (playerHoldPoster.isHoldingPoster || searchState) {
 					chaseState = true;
