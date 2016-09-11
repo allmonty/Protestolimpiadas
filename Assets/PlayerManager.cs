@@ -1,0 +1,19 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class PlayerManager : MonoBehaviour {
+
+	[SerializeField] int life = 3;
+
+	public void takeDamage(int dmg)
+	{
+		life -= dmg;
+
+		if (life <= 0)
+		{
+			Debug.Log ("Player is dead. Game over.");
+		}
+
+	}
+
+}

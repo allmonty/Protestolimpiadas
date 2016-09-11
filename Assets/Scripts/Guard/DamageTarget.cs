@@ -3,14 +3,22 @@ using System.Collections;
 
 public class DamageTarget : MonoBehaviour {
 
+	[SerializeField] GameObject target;
 	bool targetInRange = false;
+	PlayerManager pManager;
+
+	void Start()
+	{
+		pManager = target.GetComponentInChildren<PlayerManager>();
+	}
+
 
 	void applyDamage(int damage)
 	{
-		Debug.Log ("applyDamage CALLED");
 		if (targetInRange)
 		{
-			
+			Debug.Log ("applyDamage CALLED");
+			pManager.takeDamage (damage);
 		}
 	}
 
