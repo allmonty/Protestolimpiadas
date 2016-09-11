@@ -3,7 +3,9 @@ using System.Collections;
 using UnityStandardAssets.ImageEffects;
 using UnityEngine.SceneManagement;
 
-public class SceneTransition_Vignetting : MonoBehaviour {
+public class SceneTransition_Vignetting : SingletonBehaviour {
+
+    static public SingletonBehaviour Instance;
 
     public float openTimeDefault = 1f;
     public float closeTimeDefault = 1f;
@@ -21,6 +23,23 @@ public class SceneTransition_Vignetting : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
 
         SceneManager.sceneLoaded += sceneLoaded;
+    }
+
+    void Start()
+    {
+        if (Instance != null)
+        {
+            if (Instance != this)
+            {
+                SceneManager.sceneLoaded -= sceneLoaded;
+                Destroy(this);
+                Destroy(gameObject);
+            }
+        }
+        else
+        {
+            Instance = this;
+        }
     }
 
     void sceneLoaded(Scene scene, LoadSceneMode mode)
