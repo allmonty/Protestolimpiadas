@@ -6,7 +6,9 @@ public class Utility_PressButtonToChangeScene : MonoBehaviour {
 
     public string nextSceneName = "Game";
     public string buttonName = "Submit";
-    public float delay = 1f;
+
+    public float effectTime = 0.5f;
+    public float delaySceneChange = 0.7f;
 
     SceneTransition_Vignetting transitionVignette;
 
@@ -29,9 +31,9 @@ public class Utility_PressButtonToChangeScene : MonoBehaviour {
         {
             if(transitionVignette != null)
             {
-                transitionVignette.closeVignette(delay);
+                transitionVignette.closeVignette(effectTime);
             }
-            Invoke("changeScene", delay);
+            Invoke("changeScene", delaySceneChange);
         }
     }
 
