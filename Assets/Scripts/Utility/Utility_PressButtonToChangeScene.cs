@@ -12,7 +12,15 @@ public class Utility_PressButtonToChangeScene : MonoBehaviour {
 
     void Start()
     {
-        transitionVignette = GameObject.FindGameObjectWithTag("ScreenTransition").GetComponent<SceneTransition_Vignetting>();
+        GameObject screenTransition = GameObject.FindGameObjectWithTag("ScreenTransition");
+        if(screenTransition != null)
+        {
+            transitionVignette = screenTransition.GetComponent<SceneTransition_Vignetting>();
+        }
+        else
+        {
+            throw new System.Exception("Need the SceneTransition_Vignetting script somewhere in scene!!!");
+        }
     }
 
 	void Update()
