@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LookAtSomething : MonoBehaviour {
+public class LookForward : MonoBehaviour {
 
     public Transform thing;
 
