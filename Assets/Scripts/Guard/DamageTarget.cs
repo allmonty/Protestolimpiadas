@@ -17,7 +17,7 @@ public class DamageTarget : MonoBehaviour {
 	{
 		if (targetInRange)
 		{
-			Debug.Log ("applyDamage CALLED");
+			//Debug.Log ("applyDamage CALLED");
 			pManager.takeDamage(damage);
 		}
 	}

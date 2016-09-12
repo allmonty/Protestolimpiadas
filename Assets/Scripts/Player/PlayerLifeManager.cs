@@ -19,10 +19,9 @@ public class PlayerLifeManager : MonoBehaviour {
 
 		if (life <= 0)
 		{
-			Debug.Log ("Player is dead. Game over.");
+            //Player is dead
             sceneController.changeScene();
 		}
-
 	}
 
 }
