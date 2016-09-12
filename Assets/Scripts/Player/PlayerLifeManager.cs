@@ -6,6 +6,13 @@ public class PlayerLifeManager : MonoBehaviour {
 
 	[SerializeField] int life = 3;
 
+    Utility_ChangeScene sceneController;
+
+    void Start()
+    {
+        sceneController = Camera.main.GetComponent<Utility_ChangeScene>();
+    }
+
 	public void takeDamage(int dmg)
 	{
 		life -= dmg;
@@ -13,7 +20,7 @@ public class PlayerLifeManager : MonoBehaviour {
 		if (life <= 0)
 		{
 			Debug.Log ("Player is dead. Game over.");
-			SceneManager.LoadScene("EndGame");
+            sceneController.changeScene();
 		}
 
 	}
