@@ -5,11 +5,11 @@ public class DamageTarget : MonoBehaviour {
 
 	[SerializeField] GameObject target;
 	bool targetInRange = false;
-	PlayerManager pManager;
+	PlayerManagement pManager;
 
 	void Start()
 	{
-		pManager = target.GetComponentInChildren<PlayerManager>();
+		pManager = target.GetComponentInChildren<PlayerManagement>();
 	}
 
 
@@ -18,7 +18,7 @@ public class DamageTarget : MonoBehaviour {
 		if (targetInRange)
 		{
 			Debug.Log ("applyDamage CALLED");
-			pManager.takeDamage (damage);
+			pManager.takeDamage(damage);
 		}
 	}
 
