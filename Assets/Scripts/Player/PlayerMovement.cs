@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour {
         float stairSpeedY = 0f;
         if(isWalkingInStairs() && (h != 0f || v != 0f))
         {
-            stairSpeedY = stairJumpSpeed;
+            //stairSpeedY = stairJumpSpeed;
         }
 
         Vector3 movementDir = new Vector3(h, stairSpeedY, v);
