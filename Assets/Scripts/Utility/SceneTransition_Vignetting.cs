@@ -3,9 +3,9 @@ using System.Collections;
 using UnityStandardAssets.ImageEffects;
 using UnityEngine.SceneManagement;
 
-public class SceneTransition_Vignetting : SingletonBehaviour {
+public class SceneTransition_Vignetting : MonoBehaviour {
 
-    static public SingletonBehaviour Instance;
+    static public SceneTransition_Vignetting Instance;
 
     public float openTimeDefault = 1f;
     public float closeTimeDefault = 1f;
