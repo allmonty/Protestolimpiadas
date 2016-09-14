@@ -7,6 +7,9 @@ public class SceneTransition_Vignetting : MonoBehaviour {
 
     static public SceneTransition_Vignetting Instance;
 
+    public AudioSource transitionSFXIn;
+    public AudioSource transitionSFXOut;
+
     public float openTimeDefault = 1f;
     public float closeTimeDefault = 1f;
 
@@ -85,6 +88,7 @@ public class SceneTransition_Vignetting : MonoBehaviour {
         control = 1;
         vignetting = 1f;
         effectSpeed = 1f / openTimeDefault;
+        playSoundIn();
     }
 
     public void openVignette(float dtime)
@@ -92,6 +96,7 @@ public class SceneTransition_Vignetting : MonoBehaviour {
         control = 1;
         vignetting = 1f;
         effectSpeed = 1f / dtime;
+        playSoundIn();
     }
 
     public void closeVignette()
@@ -99,6 +104,7 @@ public class SceneTransition_Vignetting : MonoBehaviour {
         control = 2;
         vignetting = 0f;
         effectSpeed = 1f / closeTimeDefault;
+        playSoundOut();
     }
 
     public void closeVignette(float dtime)
@@ -106,5 +112,16 @@ public class SceneTransition_Vignetting : MonoBehaviour {
         control = 2;
         vignetting = 0f;
         effectSpeed = 1f / dtime;
+        playSoundOut();
+    }
+
+    void playSoundIn()
+    {
+        transitionSFXIn.Play();
+    }
+
+    void playSoundOut()
+    {
+        transitionSFXOut.Play();
     }
 }
