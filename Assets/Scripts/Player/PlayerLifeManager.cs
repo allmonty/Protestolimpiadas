@@ -4,24 +4,25 @@ using UnityEngine.SceneManagement;
 
 public class PlayerLifeManager : MonoBehaviour {
 
-	[SerializeField] int life = 3;
+    [SerializeField] GameObject[] lifeImages;
 
-    Utility_ChangeScene sceneController;
+    Utility_ChangeScene sceneChanger;
+    int life = 3;
 
     void Start()
     {
-        sceneController = Camera.main.GetComponent<Utility_ChangeScene>();
+        sceneChanger = Camera.main.GetComponent<Utility_ChangeScene>();
     }
 
 	public void takeDamage(int dmg)
 	{
 		life -= dmg;
 
+        lifeImages[life].SetActive(false);
+
 		if (life <= 0)
 		{
-            //Player is dead
-            sceneController.changeScene();
+            sceneChanger.changeScene();
 		}
 	}
-
 }

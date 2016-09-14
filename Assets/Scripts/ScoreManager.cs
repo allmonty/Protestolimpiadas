@@ -4,14 +4,16 @@ using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour {
 
-    public Text scoreTxtGUI;
-    public int score = 0;
-    public float delayToWinPoint = 0.1f;
-    public int pointPerDelay = 1;
+    [SerializeField] Text scoreTxtGUI;
 
     PlayerHoldPoster playerHoldPoster;
-    public bool playerIsOnCamera = false;
 
+    [SerializeField] float delayToWinPoint = 0.1f;
+    [SerializeField] int pointPerDelay = 1;
+
+    [SerializeField]int score = 0;
+    
+    bool playerIsOnCamera = false;
     bool canWinPoint = true;
 
     void Start()
@@ -34,7 +36,7 @@ public class ScoreManager : MonoBehaviour {
     void winPoint()
     {
         score += pointPerDelay;
-        scoreTxtGUI.text = "" + score;
+        scoreTxtGUI.text = score.ToString("000000");
         canWinPoint = true;
     }
 
