@@ -104,7 +104,10 @@ ModelImporter:
     7400020: ThrowTest
     7400022: Walk
     7400024: Idle
+    7400026: SitBreathing
+    7400028: SitCheering
     9500000: //RootNode
+    11100000: //RootNode
     13700000: Cartaz_001
     13700002: Player
     13700004: Player_001
@@ -116,20 +119,1532 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cartaz_001
+        weight: 1
+      - path: Player_001
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/IK_Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_L/Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_R
+        weight: 1
+      - path: Rig/IK_Foot_R/Foot_R
+        weight: 1
+      - path: Rig/IK_Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L/Finger_4_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L/Thumb_2_L
+        weight: 1
+      - path: Rig/IK_Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Cartaz
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R/Finger_4_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R/Thumb_2_R
+        weight: 1
+      - path: Rig/Torso
+        weight: 1
+      - path: Rig/Torso/Chest
+        weight: 1
+      - path: Rig/Torso/Chest/Neck
+        weight: 1
+      - path: Rig/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L/Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R/Arm_R
+        weight: 1
+      - path: Rig/Torso/Hips_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L/Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R/Leg_R
+        weight: 1
+      - path: Torcedor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Cheering
+      takeName: Cheering
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cartaz_001
+        weight: 1
+      - path: Player_001
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/IK_Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_L/Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_R
+        weight: 1
+      - path: Rig/IK_Foot_R/Foot_R
+        weight: 1
+      - path: Rig/IK_Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L/Finger_4_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L/Thumb_2_L
+        weight: 1
+      - path: Rig/IK_Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Cartaz
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R/Finger_4_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R/Thumb_2_R
+        weight: 1
+      - path: Rig/Torso
+        weight: 1
+      - path: Rig/Torso/Chest
+        weight: 1
+      - path: Rig/Torso/Chest/Neck
+        weight: 1
+      - path: Rig/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L/Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R/Arm_R
+        weight: 1
+      - path: Rig/Torso/Hips_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L/Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R/Leg_R
+        weight: 1
+      - path: Torcedor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ForaTemer
+      takeName: ForaTemer
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cartaz_001
+        weight: 1
+      - path: Player_001
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/IK_Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_L/Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_R
+        weight: 1
+      - path: Rig/IK_Foot_R/Foot_R
+        weight: 1
+      - path: Rig/IK_Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L/Finger_4_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L/Thumb_2_L
+        weight: 1
+      - path: Rig/IK_Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Cartaz
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R/Finger_4_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R/Thumb_2_R
+        weight: 1
+      - path: Rig/Torso
+        weight: 1
+      - path: Rig/Torso/Chest
+        weight: 1
+      - path: Rig/Torso/Chest/Neck
+        weight: 1
+      - path: Rig/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L/Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R/Arm_R
+        weight: 1
+      - path: Rig/Torso/Hips_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L/Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R/Leg_R
+        weight: 1
+      - path: Torcedor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ForaTemerActive
+      takeName: ForaTemerActive
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cartaz_001
+        weight: 1
+      - path: Player_001
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/IK_Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_L/Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_R
+        weight: 1
+      - path: Rig/IK_Foot_R/Foot_R
+        weight: 1
+      - path: Rig/IK_Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L/Finger_4_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L/Thumb_2_L
+        weight: 1
+      - path: Rig/IK_Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Cartaz
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R/Finger_4_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R/Thumb_2_R
+        weight: 1
+      - path: Rig/Torso
+        weight: 1
+      - path: Rig/Torso/Chest
+        weight: 1
+      - path: Rig/Torso/Chest/Neck
+        weight: 1
+      - path: Rig/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L/Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R/Arm_R
+        weight: 1
+      - path: Rig/Torso/Hips_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L/Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R/Leg_R
+        weight: 1
+      - path: Torcedor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jumping
+      takeName: Jumping
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cartaz_001
+        weight: 1
+      - path: Player_001
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/IK_Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_L/Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_R
+        weight: 1
+      - path: Rig/IK_Foot_R/Foot_R
+        weight: 1
+      - path: Rig/IK_Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L/Finger_4_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L/Thumb_2_L
+        weight: 1
+      - path: Rig/IK_Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Cartaz
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R/Finger_4_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R/Thumb_2_R
+        weight: 1
+      - path: Rig/Torso
+        weight: 1
+      - path: Rig/Torso/Chest
+        weight: 1
+      - path: Rig/Torso/Chest/Neck
+        weight: 1
+      - path: Rig/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L/Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R/Arm_R
+        weight: 1
+      - path: Rig/Torso/Hips_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L/Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R/Leg_R
+        weight: 1
+      - path: Torcedor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: JumpStatic
+      takeName: JumpStatic
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cartaz_001
+        weight: 1
+      - path: Player_001
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/IK_Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_L/Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_R
+        weight: 1
+      - path: Rig/IK_Foot_R/Foot_R
+        weight: 1
+      - path: Rig/IK_Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L/Finger_4_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L/Thumb_2_L
+        weight: 1
+      - path: Rig/IK_Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Cartaz
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R/Finger_4_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R/Thumb_2_R
+        weight: 1
+      - path: Rig/Torso
+        weight: 1
+      - path: Rig/Torso/Chest
+        weight: 1
+      - path: Rig/Torso/Chest/Neck
+        weight: 1
+      - path: Rig/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L/Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R/Arm_R
+        weight: 1
+      - path: Rig/Torso/Hips_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L/Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R/Leg_R
+        weight: 1
+      - path: Torcedor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Run
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cartaz_001
+        weight: 1
+      - path: Player_001
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/IK_Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_L/Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_R
+        weight: 1
+      - path: Rig/IK_Foot_R/Foot_R
+        weight: 1
+      - path: Rig/IK_Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L/Finger_4_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L/Thumb_2_L
+        weight: 1
+      - path: Rig/IK_Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Cartaz
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R/Finger_4_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R/Thumb_2_R
+        weight: 1
+      - path: Rig/Torso
+        weight: 1
+      - path: Rig/Torso/Chest
+        weight: 1
+      - path: Rig/Torso/Chest/Neck
+        weight: 1
+      - path: Rig/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L/Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R/Arm_R
+        weight: 1
+      - path: Rig/Torso/Hips_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L/Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R/Leg_R
+        weight: 1
+      - path: Torcedor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SitBreathing
+      takeName: SitBreathing
+      firstFrame: 0
+      lastFrame: 78
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cartaz_001
+        weight: 1
+      - path: Player_001
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/IK_Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_L/Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_R
+        weight: 1
+      - path: Rig/IK_Foot_R/Foot_R
+        weight: 1
+      - path: Rig/IK_Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L/Finger_4_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L/Thumb_2_L
+        weight: 1
+      - path: Rig/IK_Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Cartaz
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R/Finger_4_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R/Thumb_2_R
+        weight: 1
+      - path: Rig/Torso
+        weight: 1
+      - path: Rig/Torso/Chest
+        weight: 1
+      - path: Rig/Torso/Chest/Neck
+        weight: 1
+      - path: Rig/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L/Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R/Arm_R
+        weight: 1
+      - path: Rig/Torso/Hips_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L/Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R/Leg_R
+        weight: 1
+      - path: Torcedor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SitCheering
+      takeName: SitCheering
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cartaz_001
+        weight: 1
+      - path: Player_001
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/IK_Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_L/Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_R
+        weight: 1
+      - path: Rig/IK_Foot_R/Foot_R
+        weight: 1
+      - path: Rig/IK_Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L/Finger_4_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L/Thumb_2_L
+        weight: 1
+      - path: Rig/IK_Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Cartaz
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R/Finger_4_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R/Thumb_2_R
+        weight: 1
+      - path: Rig/Torso
+        weight: 1
+      - path: Rig/Torso/Chest
+        weight: 1
+      - path: Rig/Torso/Chest/Neck
+        weight: 1
+      - path: Rig/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L/Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R/Arm_R
+        weight: 1
+      - path: Rig/Torso/Hips_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L/Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R/Leg_R
+        weight: 1
+      - path: Torcedor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sitting
+      takeName: Sitting
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cartaz_001
+        weight: 1
+      - path: Player_001
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/IK_Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_L/Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_R
+        weight: 1
+      - path: Rig/IK_Foot_R/Foot_R
+        weight: 1
+      - path: Rig/IK_Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L/Finger_4_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L/Thumb_2_L
+        weight: 1
+      - path: Rig/IK_Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Cartaz
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R/Finger_4_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R/Thumb_2_R
+        weight: 1
+      - path: Rig/Torso
+        weight: 1
+      - path: Rig/Torso/Chest
+        weight: 1
+      - path: Rig/Torso/Chest/Neck
+        weight: 1
+      - path: Rig/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L/Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R/Arm_R
+        weight: 1
+      - path: Rig/Torso/Hips_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L/Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R/Leg_R
+        weight: 1
+      - path: Torcedor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Standing
+      takeName: Standing
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cartaz_001
+        weight: 1
+      - path: Player_001
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/IK_Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_L/Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_R
+        weight: 1
+      - path: Rig/IK_Foot_R/Foot_R
+        weight: 1
+      - path: Rig/IK_Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L/Finger_4_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L/Thumb_2_L
+        weight: 1
+      - path: Rig/IK_Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Cartaz
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R/Finger_4_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R/Thumb_2_R
+        weight: 1
+      - path: Rig/Torso
+        weight: 1
+      - path: Rig/Torso/Chest
+        weight: 1
+      - path: Rig/Torso/Chest/Neck
+        weight: 1
+      - path: Rig/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L/Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R/Arm_R
+        weight: 1
+      - path: Rig/Torso/Hips_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L/Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R/Leg_R
+        weight: 1
+      - path: Torcedor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ThrowTest
+      takeName: ThrowTest
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cartaz_001
+        weight: 1
+      - path: Player_001
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/IK_Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_L/Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_R
+        weight: 1
+      - path: Rig/IK_Foot_R/Foot_R
+        weight: 1
+      - path: Rig/IK_Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L/Finger_4_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L/Thumb_2_L
+        weight: 1
+      - path: Rig/IK_Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Cartaz
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R/Finger_4_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R/Thumb_2_R
+        weight: 1
+      - path: Rig/Torso
+        weight: 1
+      - path: Rig/Torso/Chest
+        weight: 1
+      - path: Rig/Torso/Chest/Neck
+        weight: 1
+      - path: Rig/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L/Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R/Arm_R
+        weight: 1
+      - path: Rig/Torso/Hips_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L/Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R/Leg_R
+        weight: 1
+      - path: Torcedor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: Walk
+      firstFrame: 0
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cartaz_001
+        weight: 1
+      - path: Player_001
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/IK_Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_L/Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_R
+        weight: 1
+      - path: Rig/IK_Foot_R/Foot_R
+        weight: 1
+      - path: Rig/IK_Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L/Finger_4_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L/Thumb_2_L
+        weight: 1
+      - path: Rig/IK_Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Cartaz
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R/Finger_4_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R/Thumb_2_R
+        weight: 1
+      - path: Rig/Torso
+        weight: 1
+      - path: Rig/Torso/Chest
+        weight: 1
+      - path: Rig/Torso/Chest/Neck
+        weight: 1
+      - path: Rig/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L/Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R/Arm_R
+        weight: 1
+      - path: Rig/Torso/Hips_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L/Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R/Leg_R
+        weight: 1
+      - path: Torcedor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Idle
+      firstFrame: 0
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cartaz_001
+        weight: 1
+      - path: Player_001
+        weight: 1
+      - path: Rig
+        weight: 1
+      - path: Rig/IK_Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_L/Foot_L
+        weight: 1
+      - path: Rig/IK_Foot_R
+        weight: 1
+      - path: Rig/IK_Foot_R/Foot_R
+        weight: 1
+      - path: Rig/IK_Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Hand_L/Finger_2_L/Finger_3_L/Finger_4_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L
+        weight: 1
+      - path: Rig/IK_Hand_L/Thumb_1_L/Thumb_2_L
+        weight: 1
+      - path: Rig/IK_Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Cartaz
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Hand_R/Finger_2_R/Finger_3_R/Finger_4_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R
+        weight: 1
+      - path: Rig/IK_Hand_R/Thumb_1_R/Thumb_2_R
+        weight: 1
+      - path: Rig/Torso
+        weight: 1
+      - path: Rig/Torso/Chest
+        weight: 1
+      - path: Rig/Torso/Chest/Neck
+        weight: 1
+      - path: Rig/Torso/Chest/Neck/Head
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_L/Upper_Arm_L/Arm_L
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R
+        weight: 1
+      - path: Rig/Torso/Chest/Shoulder_R/Upper_Arm_R/Arm_R
+        weight: 1
+      - path: Rig/Torso/Hips_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_L/Upper_Leg_L/Leg_L
+        weight: 1
+      - path: Rig/Torso/Hips_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R
+        weight: 1
+      - path: Rig/Torso/Hips_R/Upper_Leg_R/Leg_R
+        weight: 1
+      - path: Torcedor
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -155,360 +1670,8 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    human:
-    - boneName: Rig
-      humanName: Hips
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Hand_L
-      humanName: LeftUpperLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: IK_Hand_R
-      humanName: RightUpperLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Finger_2_L
-      humanName: LeftLowerLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Finger_2_R
-      humanName: RightLowerLeg
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Finger_3_L
-      humanName: LeftFoot
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Finger_3_R
-      humanName: RightFoot
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Torso
-      humanName: Spine
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Chest
-      humanName: Chest
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Neck
-      humanName: Neck
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Head
-      humanName: Head
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Shoulder_L
-      humanName: LeftShoulder
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Shoulder_R
-      humanName: RightShoulder
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Upper_Arm_L
-      humanName: LeftUpperArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Upper_Arm_R
-      humanName: RightUpperArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Arm_L
-      humanName: LeftLowerArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Arm_R
-      humanName: RightLowerArm
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Finger_4_L
-      humanName: LeftToes
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    - boneName: Finger_4_R
-      humanName: RightToes
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
-    skeleton:
-    - name: Torcedor(Clone)
-      position: {x: 0, y: 0, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Cartaz_001
-      position: {x: 2.2887464, y: 0.107092746, z: -1.0794786}
-      rotation: {x: 0.99385035, y: 0.11045595, z: -0.007801781, w: 0.00030356733}
-      scale: {x: 0.24868116, y: 0.0030772618, z: 0.12434056}
-      transformModified: 1
-    - name: Player_001
-      position: {x: -0.015236806, y: -0.11446543, z: 3.5157118}
-      rotation: {x: -1.4482365e-10, y: -5.634421e-12, z: 0.038875803, w: 0.99924403}
-      scale: {x: 3.0813496, y: 3.0813496, z: 3.0813496}
-      transformModified: 1
-    - name: Rig
-      position: {x: 0.012997627, y: 1.5290626, z: -0.54325163}
-      rotation: {x: -0.4230483, y: 0.012970581, z: 0.028457178, w: -0.90556735}
-      scale: {x: 0.4021214, y: 0.4021214, z: 0.40212142}
-      transformModified: 1
-    - name: IK_Foot_L
-      position: {x: -0.62011856, y: 0.29554144, z: -2.6144648}
-      rotation: {x: 0, y: -0, z: -0.6790829, w: 0.7340616}
-      scale: {x: 0.99999994, y: 0.99999994, z: 1}
-      transformModified: 1
-    - name: Foot_L
-      position: {x: -0.000000014901161, y: 0.000000031664968, z: 0.00000023841858}
-      rotation: {x: 0.036797114, y: 0.021679297, z: 0.9987665, w: 0.02532856}
-      scale: {x: 0.99999976, y: 0.99998975, z: 0.99998033}
-      transformModified: 1
-    - name: IK_Foot_R
-      position: {x: 0.58378434, y: 0.29554135, z: -2.5812538}
-      rotation: {x: 0, y: -0, z: -0.6790829, w: 0.7340616}
-      scale: {x: 0.99999994, y: 0.99999994, z: 1}
-      transformModified: 1
-    - name: Foot_R
-      position: {x: -0.000000007450581, y: 0.000000022351742, z: 0.00000023841858}
-      rotation: {x: -0.0019785606, y: 0.015088193, z: 0.9996515, w: 0.021571724}
-      scale: {x: 0.9999999, y: 0.9999259, z: 0.99999917}
-      transformModified: 1
-    - name: IK_Hand_L
-      position: {x: -1.457911, y: -1.0082388, z: 3.3154745}
-      rotation: {x: 0.83394295, y: 0.4321693, z: 0.0304319, w: -0.34182283}
-      scale: {x: 1.0000002, y: 1, z: 1.0000002}
-      transformModified: 1
-    - name: Hand_L
-      position: {x: -0.00000008940697, y: 0.000000059604645, z: -0.00000014901161}
-      rotation: {x: 0.56406087, y: -0.22021708, z: 0.6705995, w: 0.4285278}
-      scale: {x: 1, y: 0.99999994, z: 1}
-      transformModified: 1
-    - name: Finger_2_L
-      position: {x: -0.25173396, y: -0.00000008940697, z: -0.000000059604645}
-      rotation: {x: 0.00000040046862, y: -0.03070458, z: -0.0071331365, w: 0.9995031}
-      scale: {x: 1, y: 1, z: 1.0000001}
-      transformModified: 1
-    - name: Finger_3_L
-      position: {x: -0.2517338, y: 0.00000017881393, z: 0.00000017881393}
-      rotation: {x: -0.00006564705, y: 0.081827514, z: 0.01686884, w: 0.9965037}
-      scale: {x: 0.99999994, y: 1, z: 0.9999999}
-      transformModified: 1
-    - name: Finger_4_L
-      position: {x: -0.25173417, y: 0, z: 0.00000014901161}
-      rotation: {x: -0.00000051409, y: -0.00000025425126, z: 0.00000033434472, w: 1}
-      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
-      transformModified: 1
-    - name: Thumb_1_L
-      position: {x: -0.00000008940697, y: 0.000000059604645, z: -0.00000014901161}
-      rotation: {x: 0.17917974, y: -0.009019613, z: 0.98375493, w: 0.0062866416}
-      scale: {x: 0.99999994, y: 1, z: 0.9999997}
-      transformModified: 1
-    - name: Thumb_2_L
-      position: {x: -0.38801843, y: -0.000000059604645, z: 0.00000020861626}
-      rotation: {x: -0.012220339, y: -0.14578947, z: -0.06104896, w: 0.98735464}
-      scale: {x: 1, y: 0.99999994, z: 0.9999999}
-      transformModified: 1
-    - name: IK_Hand_R
-      position: {x: 1.7861447, y: -0.9620467, z: 3.2499714}
-      rotation: {x: 0.45153347, y: 0.81946254, z: 0.34039506, w: -0.09343429}
-      scale: {x: 0.9999999, y: 1, z: 0.9999999}
-      transformModified: 1
-    - name: Hand_R
-      position: {x: -0.000000059604645, y: -0.000000033528863, z: -0.0000002682209}
-      rotation: {x: 0.49065173, y: 0.32468805, z: 0.6392194, w: -0.49521422}
-      scale: {x: 0.9999998, y: 0.99999994, z: 0.99999994}
-      transformModified: 1
-    - name: Finger_2_R
-      position: {x: -0.21857813, y: 0.00000017881393, z: -0.000000059604645}
-      rotation: {x: -0.023008833, y: -0.16113299, z: -0.051667497, w: 0.98531073}
-      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
-      transformModified: 1
-    - name: Finger_3_R
-      position: {x: -0.21857804, y: 0.00000029802322, z: -0.00000008940697}
-      rotation: {x: -0.07548925, y: 0.39516392, z: -0.28715366, w: 0.8693041}
-      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
-      transformModified: 1
-    - name: Finger_4_R
-      position: {x: -0.21857773, y: 0.000000059604645, z: 0.000000059604645}
-      rotation: {x: -0.07112926, y: -0.49814206, z: -0.15972948, w: 0.849283}
-      scale: {x: 1.0000001, y: 1, z: 1}
-      transformModified: 1
-    - name: Cartaz
-      position: {x: -0.26123956, y: 0.7347219, z: -0.20655999}
-      rotation: {x: 0.820874, y: -0.1164052, z: 0.109661415, w: 0.548261}
-      scale: {x: 0.008919242, y: 0.008919241, z: 0.00891924}
-      transformModified: 1
-    - name: Thumb_1_R
-      position: {x: -0.000000059604645, y: -0.000000033528863, z: -0.0000002682209}
-      rotation: {x: 0.1511123, y: -0.051673308, z: 0.80973995, w: 0.5646381}
-      scale: {x: 1.0000006, y: 1.0000004, z: 1.0000002}
-      transformModified: 1
-    - name: Thumb_2_R
-      position: {x: -0.46997628, y: -0.00000008940697, z: 0.00000009313226}
-      rotation: {x: 0.1374258, y: 0.0630925, z: 0.15717725, w: 0.9759246}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Torso
-      position: {x: -0.047537073, y: 0.27032906, z: -0.14328739}
-      rotation: {x: -0.12132152, y: -0.20413078, z: -0.6442275, w: 0.72703695}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Chest
-      position: {x: -0.7647549, y: 0.00000005809536, z: 0}
-      rotation: {x: 0.00000011663085, y: -0.033277947, z: 0.0000000039670423, w: 0.99944615}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Neck
-      position: {x: -0.9361365, y: 0.000000068122176, z: 0.000000041136044}
-      rotation: {x: 0.0005922913, y: 0.07970809, z: 0.0041054976, w: 0.9968096}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Head
-      position: {x: -0.729443, y: 0.000000052500845, z: 0.000000022667438}
-      rotation: {x: 0.023449054, y: 0.036077075, z: -0.020765984, w: 0.99885803}
-      scale: {x: 0.99999994, y: 1, z: 1}
-      transformModified: 1
-    - name: Shoulder_L
-      position: {x: -0.9361365, y: 0.000000068122176, z: 0.000000041136044}
-      rotation: {x: -0.51104265, y: -0.45363143, z: 0.488708, w: 0.542419}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Upper_Arm_L
-      position: {x: -1.3088582, y: 0.00000013044017, z: 0.000000054341886}
-      rotation: {x: 0.8457055, y: 0.095989965, z: -0.014633498, w: -0.52474195}
-      scale: {x: 1, y: 0.99999994, z: 0.99999976}
-      transformModified: 1
-    - name: Arm_L
-      position: {x: -1.50683, y: 0.00000020861626, z: -0.0000002682209}
-      rotation: {x: -0.013620195, y: 0.018267397, z: 0.6169744, w: 0.7866533}
-      scale: {x: 0.99999994, y: 1.0000001, z: 0.9999999}
-      transformModified: 1
-    - name: Shoulder_R
-      position: {x: -0.9361365, y: 0.000000068122176, z: 0.000000041136044}
-      rotation: {x: 0.5102664, y: -0.45449162, z: -0.48951823, w: 0.5416987}
-      scale: {x: 1.0000002, y: 1.0000001, z: 1}
-      transformModified: 1
-    - name: Upper_Arm_R
-      position: {x: -1.4754305, y: 0.00000016014107, z: -0.0000002352556}
-      rotation: {x: 0.76188993, y: 0.01691097, z: 0.10134042, w: 0.639506}
-      scale: {x: 1, y: 0.99999994, z: 0.99999994}
-      transformModified: 1
-    - name: Arm_R
-      position: {x: -1.5835141, y: 0.00000008940697, z: -0.00000008940697}
-      rotation: {x: -0.0024795053, y: 0.09564484, z: -0.668429, w: 0.73759645}
-      scale: {x: 0.9999998, y: 1.0000001, z: 0.9999999}
-      transformModified: 1
-    - name: Hips_R
-      position: {x: -0.000000003588949, y: 3.57973e-10, z: 0}
-      rotation: {x: -0.37490964, y: 0.5995355, z: 0.5770941, w: -0.40861025}
-      scale: {x: 1, y: 0.99999994, z: 1}
-      transformModified: 1
-    - name: Upper_Leg_R
-      position: {x: -0.6038999, y: 0.000000028871, z: -0.000000011196825}
-      rotation: {x: 0.13553472, y: -0.516918, z: -0.19456543, w: 0.822539}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
-    - name: Leg_R
-      position: {x: -1.0184902, y: 0.000000022351742, z: -0.00000003632158}
-      rotation: {x: 0.65283567, y: 0.25974995, z: 0.27894464, w: 0.65461856}
-      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999998}
-      transformModified: 1
-    - name: Hips_L
-      position: {x: -0.000000003588949, y: 3.57973e-10, z: 0}
-      rotation: {x: 0.3657946, y: 0.60514003, z: -0.5838577, w: -0.398886}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
-      transformModified: 1
-    - name: Upper_Leg_L
-      position: {x: -0.6214525, y: 0.00000003259629, z: 0.00000006247004}
-      rotation: {x: -0.090824634, y: -0.4897874, z: 0.22277874, w: 0.83799094}
-      scale: {x: 0.99999994, y: 1, z: 1}
-      transformModified: 1
-    - name: Leg_L
-      position: {x: -1.0112909, y: 0.000000115484, z: -0.000000001629815}
-      rotation: {x: 0.9236426, y: -0.3740057, z: 0.08369078, w: -0.000026075359}
-      scale: {x: 1.0000002, y: 1, z: 0.9999998}
-      transformModified: 1
-    - name: Torcedor
-      position: {x: -0.000000001862645, y: -1.16415e-10, z: 0.5631635}
-      rotation: {x: 7.126693e-16, y: 8.885929e-17, z: 0.038875803, w: 0.99924403}
-      scale: {x: 2.486811, y: 2.486811, z: 2.486811}
-      transformModified: 1
+    human: []
+    skeleton: []
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -519,7 +1682,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 3
+  animationType: 1
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
