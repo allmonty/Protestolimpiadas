@@ -67,7 +67,6 @@ public class GuardBehaviour : MonoBehaviour {
 				{
 					attackTimer = 0.0F;
 					anim.SetBool ("isAttacking", true);
-
 					StartCoroutine( damageHit(animationDelay) );
 				}
 			}
@@ -91,6 +90,7 @@ public class GuardBehaviour : MonoBehaviour {
 	IEnumerator damageHit(float delayToHit)
 	{
 		yield return new WaitForSeconds(delayToHit);
+
 		BroadcastMessage("applyDamage", damage);
 	}
 
