@@ -5,11 +5,12 @@ public class SignInGamejolt : MonoBehaviour {
 
     public Utility_PressButtonToChangeScene sceneChanger;
 
-    void Start()
+    void Update()
     {
         bool isSignedIn = GameJolt.API.Manager.Instance.CurrentUser != null;
         if(isSignedIn)
         {
+            reactivateSceneChanger();
             gameObject.SetActive(false);
         }
     }

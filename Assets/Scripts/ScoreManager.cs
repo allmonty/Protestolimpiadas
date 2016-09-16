@@ -51,15 +51,15 @@ public class ScoreManager : MonoBehaviour {
         {
             GameObject pointsHUD = GameObject.Find("Points");
             pointsHUD.GetComponent<Text>().text = score.ToString("000000");
-        }
-        
-        string scoreText = score + " protestadas"; // A string representing the score to be shown on the website.
-        int tableID = 186722; // Set it to 0 for main highscore table.
-        string extraData = ""; // This will not be shown on the website. You can store any information.
 
-        GameJolt.API.Scores.Add(score, scoreText, tableID, extraData, (bool success) => {
-            Debug.Log(string.Format("Score Add {0}.", success ? "Successful" : "Failed"));
-        });
+            string scoreText = score + " protestadas"; // A string representing the score to be shown on the website.
+            int tableID = 186722; // Set it to 0 for main highscore table.
+            string extraData = ""; // This will not be shown on the website. You can store any information.
+
+            GameJolt.API.Scores.Add(score, scoreText, tableID, extraData, (bool success) => {
+                Debug.Log(string.Format("Score Add {0}.", success ? "Successful" : "Failed"));
+            });
+        }
     }
 
     public void setPlayerIsOnCamera(bool value)
