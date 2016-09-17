@@ -3,31 +3,38 @@ using System.Collections;
 
 public class GuardBehaviour : MonoBehaviour {
 
-	[SerializeField] float distanceToForget = 10;
 	[SerializeField] Transform target;
 	[SerializeField] GameObject exclamationMark;
 	[SerializeField] GameObject questionMark;
+	[SerializeField] float distanceToForget = 10.0F;
+	[SerializeField] float distanceToAttack = 1.0F;
+	[SerializeField] float timeToForget = 2.0F;
+	[SerializeField] float searchingTime = 2.0F;
+	[SerializeField] float attackDelay = 1.5F;
+	[SerializeField] int damage = 1;
+
+	[HideInInspector] public bool chaseState = false;
+	[HideInInspector] public bool searchState = false;
 
 	PlayerHoldPoster playerHoldPoster;
+	Animator anim;
 
-	public bool chaseState = false;
-	public bool searchState = false;
 	bool targetSpotted = false;
-
-	public float timeToForget = 2.0F;
-	public float searchingTime = 2.0F;
-	public float timer = 0.0F;
+	float timer = 0.0F;
+	public float animationDelay = 0.75F;
+	public float attackTimer;
 
 	void Start () {
 		playerHoldPoster = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHoldPoster>();
-		
+		anim = GetComponentInChildren<Animator> ();
+		attackTimer = attackDelay;
+		animationDelay = 0.75F;
 	}
 
 	void Update () {
 
 		// Player out of sight
-		if (Vector3.Distance( this.transform.position, target.position) > distanceToForget )
-		{
+		if (Vector3.Distance (this.transform.position, target.position) > distanceToForget) {
 			if (targetSpotted) {
 				timer += Time.deltaTime;
 				if (timer >= timeToForget) {
@@ -39,37 +46,52 @@ public class GuardBehaviour : MonoBehaviour {
 					exclamationMark.SetActive (false);
 					questionMark.SetActive (true);
 				}				
-			}
-			else if(searchState)
-			{
+			} else if (searchState) {
 				timer += Time.deltaTime;
-				if (timer >= searchingTime)
-				{
+				if (timer >= searchingTime) {
 					searchState = false;
-					questionMark.SetActive(false);
+					questionMark.SetActive (false);
 				}
 				
 			}
-		}
+		} 
+
 		// Player on sight
 		else
 		{
-			timer = 0.0F;
-			if (playerHoldPoster.isHoldingPoster || searchState) {
-				chaseState = true;
-				searchState = false;
-				targetSpotted = true;
+			// Close distance
+			if ( Vector3.Distance (this.transform.position, target.position) <= distanceToAttack && anim.GetBool("isChasing") )
+			{
+				attackTimer += Time.deltaTime;
+				if (attackTimer >= attackDelay)
+				{
+					attackTimer = 0.0F;
+					anim.SetBool ("isAttacking", true);
+					StartCoroutine( damageHit(animationDelay) );
+				}
+			}
+			else
+			{
+                anim.SetBool("isAttacking", false);
+                timer = 0.0F;
+				if (playerHoldPoster.isHoldingPoster || searchState) {
+					chaseState = true;
+					searchState = false;
+					targetSpotted = true;
 
-				exclamationMark.SetActive (true);
-				questionMark.SetActive (false);
+					exclamationMark.SetActive (true);
+					questionMark.SetActive (false);
+				}				
 			}
 
 		}
 	}
 
-	void searchTarget()
+	IEnumerator damageHit(float delayToHit)
 	{
-		
+		yield return new WaitForSeconds(delayToHit);
+
+		BroadcastMessage("applyDamage", damage);
 	}
 
 	// Gizmos
