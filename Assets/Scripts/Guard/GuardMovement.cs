@@ -12,6 +12,8 @@ public class GuardMovement : MonoBehaviour {
 	[SerializeField] float patrollingSpeed = 2.5F;
 	[SerializeField] float chaseSpeed = 3.5F;
 
+	[SerializeField] float targetDistanceThreshold = 2.3F;
+
 	NavMeshAgent agent;
 	GuardBehaviour guardBehaviour;
 	Animator anim;
@@ -31,36 +33,55 @@ public class GuardMovement : MonoBehaviour {
 
 	void Update () {
 		if (guardBehaviour.chaseState) {
-			agent.Resume();
-			agent.speed = chaseSpeed;
-			agent.destination = target.position;	
-			anim.SetBool ("isChasing", true);
+			chase ();
 		} 
 		else if (guardBehaviour.searchState)
 		{
-			agent.Stop();
-			anim.SetBool ("isChasing", false);
-			anim.SetBool ("isPatrolling", false);
+			search ();
 		}
 		else
 		{
-			agent.Resume();
-			agent.destination = routeWaypoints[nextWaypoint].position;
-			agent.speed = patrollingSpeed;
-			anim.SetBool ("isPatrolling", true);
-			Vector3 normalizedWaypointPos = new Vector3 (agent.destination.x, transform.position.y, agent.destination.z);
+			patrol ();
+		}
+	}
 
-			if (Vector3.Distance (transform.position, normalizedWaypointPos) <= waypointThreshold)
-			{
-				transform.LookAt(transform.position + Vector3.back);
-				anim.SetBool ("isPatrolling", false);
+	void chase() {
+		agent.destination = target.position;
+		if (Vector3.Distance (agent.transform.position, agent.destination) <= targetDistanceThreshold) {
+			Debug.Log ("Perto demais!");
+			agent.Stop ();
+		}
+		else { 
+			agent.Resume ();
+			agent.speed = chaseSpeed;
+			anim.SetBool ("isChasing", true);
+		}
+	}
 
-				timer += Time.deltaTime;
-				if (timer >= waitingTime) {
-					timer = 0.0F;
-					nextWaypoint = Random.Range (0, routeWaypoints.Length);	
-				}
+	void search() {
+		agent.Stop();
+		anim.SetBool ("isChasing", false);
+		anim.SetBool ("isPatrolling", false);
+	}
+
+	void patrol() {
+		agent.Resume();
+		agent.destination = routeWaypoints[nextWaypoint].position;
+		agent.speed = patrollingSpeed;
+		anim.SetBool ("isPatrolling", true);
+		Vector3 normalizedWaypointPos = new Vector3 (agent.destination.x, transform.position.y, agent.destination.z);
+
+		if (Vector3.Distance (transform.position, normalizedWaypointPos) <= waypointThreshold)
+		{
+			transform.LookAt(transform.position + Vector3.back);
+			anim.SetBool ("isPatrolling", false);
+
+			timer += Time.deltaTime;
+			if (timer >= waitingTime) {
+				timer = 0.0F;
+				nextWaypoint = Random.Range (0, routeWaypoints.Length);	
 			}
 		}
 	}
+
 }

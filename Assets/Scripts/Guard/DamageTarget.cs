@@ -5,7 +5,6 @@ public class DamageTarget : MonoBehaviour {
 
 	[SerializeField] GameObject target;
 	[SerializeField] AudioSource hitSFX;
-	[SerializeField] float SFXPlayDelay = 0.60F;
 
 
 	PlayerLifeManager pManager;
@@ -22,7 +21,6 @@ public class DamageTarget : MonoBehaviour {
 	{
 		if (targetInRange)
 		{
-			//Debug.Log ("applyDamage CALLED");
 			hitSFX.Play();
 			pManager.takeDamage(damage);
 		}
