@@ -48,8 +48,9 @@ public class GuardMovement : MonoBehaviour {
 	void chase() {
 		agent.destination = target.position;
 		if (Vector3.Distance (agent.transform.position, agent.destination) <= targetDistanceThreshold) {
-			Debug.Log ("Perto demais!");
 			agent.Stop ();
+			anim.SetBool ("isPatrolling", false);
+			anim.SetBool ("isChasing", false);
 		}
 		else { 
 			agent.Resume ();
