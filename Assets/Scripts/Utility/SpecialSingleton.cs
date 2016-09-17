@@ -24,7 +24,6 @@ public class SpecialSingleton : MonoBehaviour {
         else
         {
             SceneManager.sceneLoaded += doOnSceneLoaded;
-            eventsToCall = new UnityEvent();
             Instances[specialName] = this;
         }
     }
