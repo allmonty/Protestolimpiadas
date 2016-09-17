@@ -32,6 +32,7 @@ public class GuardBehaviour : MonoBehaviour {
 	}
 
 	void Update () {
+		attackTimer += Time.deltaTime;
 
 		// Player out of sight
 		if (Vector3.Distance (this.transform.position, target.position) > distanceToForget) {
@@ -60,11 +61,12 @@ public class GuardBehaviour : MonoBehaviour {
 		else
 		{
 			// Close distance
-			if ( Vector3.Distance (this.transform.position, target.position) <= distanceToAttack && anim.GetBool("isChasing") )
+			if ( Vector3.Distance (this.transform.position, target.position) <= distanceToAttack && chaseState )
 			{
-				attackTimer += Time.deltaTime;
+//				attackTimer += Time.deltaTime;
 				if (attackTimer >= attackDelay)
 				{
+					Debug.Log ("ATACOU!");
 					attackTimer = 0.0F;
 					anim.SetBool ("isAttacking", true);
 					StartCoroutine( damageHit(animationDelay) );
@@ -91,6 +93,7 @@ public class GuardBehaviour : MonoBehaviour {
 	{
 		yield return new WaitForSeconds(delayToHit);
 
+		anim.SetBool ("isAttacking", false); 
 		BroadcastMessage("applyDamage", damage);
 	}
 
