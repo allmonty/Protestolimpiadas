@@ -12,8 +12,7 @@ public class PlayerLifeManager : MonoBehaviour {
     void Start()
     {
         sceneChanger = Camera.main.GetComponent<Utility_ChangeScene>();
-        GameObject HUDLife = GameObject.Find("HUD Life");
-        Transform lives = HUDLife.transform.GetChild(0);
+        Transform lives = GameObject.Find("Lives HUD Imgs").transform;
         lifeImages[0] = lives.GetChild(0).gameObject;
         lifeImages[1] = lives.GetChild(1).gameObject;
         lifeImages[2] = lives.GetChild(2).gameObject;
