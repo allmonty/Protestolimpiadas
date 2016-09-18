@@ -63,10 +63,10 @@ public class GuardBehaviour : MonoBehaviour {
 			// Close distance
 			if ( Vector3.Distance (this.transform.position, target.position) <= distanceToAttack && chaseState )
 			{
-//				attackTimer += Time.deltaTime;
+                //attackTimer += Time.deltaTime;
 				if (attackTimer >= attackDelay)
 				{
-					Debug.Log ("ATACOU!");
+					//Debug.Log ("ATACOU!");
 					attackTimer = 0.0F;
 					anim.SetBool ("isAttacking", true);
 					StartCoroutine( damageHit(animationDelay) );
